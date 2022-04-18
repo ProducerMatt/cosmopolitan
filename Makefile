@@ -389,3 +389,9 @@ $(INCS):
 	rm -f o/$(MODE)/depend
 
 -include o/$(MODE)/depend
+
+printflags:
+	@echo "COMPILE.c.flags='$(COMPILE.c.flags)'"
+	@echo "COMPILE.cxx.flags='$(COMPILE.cxx.flags)'"
+	@echo "LINK.flags='$(LINK.flags)'"
+	@echo "OBJECTIFY.c.flags=$(OBJECTIFY.c.flags)"
